@@ -1,0 +1,4 @@
+id=nfc
+name=NFC blobs
+author=mediaextractor, emote
+description=Replaces source NFC blobs with target ones.
