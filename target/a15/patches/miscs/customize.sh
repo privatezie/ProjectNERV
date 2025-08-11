@@ -6,23 +6,13 @@ SET_PROP "vendor" "renderthread.skia.reduceopstasksplitting" "true"
 SET_PROP "vendor" "debug.hwui.skia_atrace_enabled" "false"
 LOG_STEP_OUT
 
-LOG_STEP_IN "- Fix /system/build.prop"
-SET_PROP "system" "persist.audio.deepbuffer_delay" "0"
-LOG_STEP_OUT
-
 LOG_STEP_IN "- Netflix props"
 SET_PROP "vendor" "ro.netflix.bsp_rev" "MTK6789-35965-1"
-LOG_STEP_OUT
-
-LOG_STEP_IN "- Setting FUSE passthough"
-SET_PROP "system" "persist.sys.fuse.passthrough.enable" "true"
 LOG_STEP_OUT
 
 LOG_STEP_IN "- Enable UFFD GC"
 SET_PROP "product" "ro.dalvik.vm.enable_uffd_gc" "true"
 LOG_STEP_OUT
-
-LOG_STEP_IN "- Enable advanced battery info"
 
 DECODE_APK "system" "system/priv-app/SecSettings/SecSettings.apk"
 
